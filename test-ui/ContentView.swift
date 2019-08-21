@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import MapKit
 
 extension Color {
     
@@ -17,15 +16,6 @@ extension Color {
     
     static let border = Color.rgb(red: 47, green: 46, blue: 65)
     static let main = Color.rgb(red: 108, green: 99, blue: 255)
-}
-
-
-struct MapView: UIViewRepresentable {
-    func updateUIView(_ uiView: MKMapView, context: UIViewRepresentableContext<MapView>) {}
-    
-    func makeUIView(context: Context) -> MKMapView {
-        MKMapView(frame: .zero)
-    }
 }
 
 struct IllustrationImage: View {
