@@ -74,6 +74,20 @@ struct LoginButton: View {
     }
 }
 
+struct ResetPasswordButton: View {
+    var body: some View {
+        Button(action: {}) {
+            HStack {
+                Spacer()
+                Text("RESET PASSWORD")
+                    .font(.headline)
+                    .color(Color.main)
+                Spacer()
+            }
+        }
+    }
+}
+
 struct ContentView : View {
     @State var email = ""
     @State var password = ""
@@ -84,41 +98,34 @@ struct ContentView : View {
             IllustrationImage()
             TitleText()
             ButtonsView()
-            
             Text("Or sign in with email")
                 .color(.gray)
-            
             TextField($email, placeholder: Text("mail address"))
                 .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8))
                 .frame(width: 300, height: 40, alignment: .center)
                 .border(Color.border, width: 0.5, cornerRadius: 12)
                 .lineSpacing(10)
                 .textContentType(.username)
-            
             TextField($password, placeholder: Text("password"))
                 .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8))
                 .frame(width: 300, height: 40, alignment: .center)
                 .border(Color.border, width: 0.5, cornerRadius: 12)
                 .lineSpacing(10)
                 .textContentType(.password)
-        
             LoginButton()
-            Button(action: {}) {
-                HStack {
-                    Spacer()
-                    Text("RESET PASSWORD")
-                        .font(.headline)
+            ResetPasswordButton()
+            HStack(alignment: .center, spacing:  10) {
+                Text("Don't have an account?")
+                    .color(.gray)
+                Button(action: {}) {
+                    Text("Sign up here")
                         .color(Color.main)
-                    Spacer()
                 }
             }
-            
-            
         }
     }
 }
 
-#if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
         ScrollView {
@@ -126,4 +133,3 @@ struct ContentView_Previews : PreviewProvider {
         }
     }
 }
-#endif
