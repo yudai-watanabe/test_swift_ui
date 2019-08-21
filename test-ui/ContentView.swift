@@ -114,7 +114,7 @@ struct ContentView : View {
                 .textContentType(.password)
             LoginButton()
             ResetPasswordButton()
-            HStack(alignment: .center, spacing:  10) {
+            HStack(alignment: .center, spacing: 10) {
                 Text("Don't have an account?")
                     .color(.gray)
                 Button(action: {}) {
