@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		168939FF230CE603001B216A /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168939FE230CE603001B216A /* ColorExtensions.swift */; };
 		16FD1F5022C0A41D008F4898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FD1F4F22C0A41D008F4898 /* AppDelegate.swift */; };
 		16FD1F5222C0A41D008F4898 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FD1F5122C0A41D008F4898 /* SceneDelegate.swift */; };
 		16FD1F5422C0A41D008F4898 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FD1F5322C0A41D008F4898 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		168939FE230CE603001B216A /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		16FD1F4C22C0A41C008F4898 /* test-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FD1F4F22C0A41D008F4898 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FD1F5122C0A41D008F4898 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16893A00230CE609001B216A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				168939FE230CE603001B216A /* ColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		16FD1F4322C0A41C008F4898 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		16FD1F4E22C0A41C008F4898 /* test-ui */ = {
 			isa = PBXGroup;
 			children = (
+				16893A00230CE609001B216A /* Extensions */,
 				16FD1F4F22C0A41D008F4898 /* AppDelegate.swift */,
 				16FD1F5122C0A41D008F4898 /* SceneDelegate.swift */,
 				16FD1F5322C0A41D008F4898 /* ContentView.swift */,
@@ -149,6 +160,7 @@
 				16FD1F5022C0A41D008F4898 /* AppDelegate.swift in Sources */,
 				16FD1F5222C0A41D008F4898 /* SceneDelegate.swift in Sources */,
 				16FD1F5422C0A41D008F4898 /* ContentView.swift in Sources */,
+				168939FF230CE603001B216A /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

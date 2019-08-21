@@ -8,16 +8,6 @@
 
 import SwiftUI
 
-extension Color {
-    
-    static func rgb(red: Int, green: Int, blue: Int, opacity: Double = 1) -> Color {
-        return Color(red: Double(red)/255, green: Double(green)/255, blue: Double(blue)/255, opacity: opacity)
-    }
-    
-    static let border = Color.rgb(red: 47, green: 46, blue: 65)
-    static let main = Color.rgb(red: 108, green: 99, blue: 255)
-}
-
 struct IllustrationImage: View {
     var body: some View {
         Image("Illustration")
